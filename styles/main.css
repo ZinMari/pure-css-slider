@@ -37,3 +37,17 @@
 body {
   font-family: raleway-l, sans-serif;
 }
+
+.show {
+  background: var(--bg-show);
+  height: 100vh;
+  width: calc(100vw - var(--aside));
+}
+
+.aside {
+  background: #fff;
+  width: var(--aside);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
