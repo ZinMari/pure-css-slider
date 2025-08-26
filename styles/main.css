@@ -3,3 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --bg-show: #ecf0f6;
+  --bg-odd: #f6f8fc;
+  --aside: 300px;
+}
