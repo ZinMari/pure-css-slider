@@ -9,3 +9,31 @@
   --bg-odd: #f6f8fc;
   --aside: 300px;
 }
+
+@font-face {
+  font-family: raleway-l;
+  src: url(../assets/fonts/raleway-300.woff2);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: raleway-l;
+  src: url(../assets/fonts/raleway-400.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: raleway-l;
+  src: url(../assets/fonts/raleway-600.woff2);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: raleway-l;
+  src: url(../assets/fonts/raleway-700.woff2);
+  font-weight: 700;
+}
+
+body {
+  font-family: raleway-l, sans-serif;
+}
