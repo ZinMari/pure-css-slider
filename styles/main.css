@@ -8,6 +8,8 @@
   --bg-show: #ecf0f6;
   --bg-odd: #f6f8fc;
   --aside: 300px;
+  --model-width: 300px;
+  --model-height: 640px;
 }
 
 @font-face {
@@ -42,6 +44,22 @@ body {
   background: var(--bg-show);
   height: 100vh;
   width: calc(100vw - var(--aside));
+}
+
+.layers {
+  position: absolute;
+  inset: 0;
+}
+
+.layers > * {
+  width: var(--model-width);
+  height: var(--model-height);
+  position: absolute;
+  left: calc(100vw - var(--aside) - 20vw);
+}
+
+.layers img {
+  height: 100%;
 }
 
 .aside {
