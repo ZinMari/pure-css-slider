@@ -56,6 +56,14 @@ body {
   height: var(--model-height);
   position: absolute;
   left: calc(100vw - var(--aside) - 20vw);
+  top: 50%;
+  margin-left: calc(var(--model-width) / -2);
+  margin-top: calc(var(--model-height) / -2);
+  cursor: pointer;
+  animation-timeline: scroll();
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-range: 300vh;
 }
 
 .layers img {
