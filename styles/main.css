@@ -44,6 +44,7 @@ body {
   background: var(--bg-show);
   height: 100vh;
   width: calc(100vw - var(--aside));
+  position: fixed;
 }
 
 .layers {
@@ -76,4 +77,57 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.item {
+  padding: 30px 0 40px;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  height: 50vh;
+}
+
+.item:nth-child(odd) {
+  background: var(--bg-odd);
+}
+
+.item h3 {
+  margin: 0 0 3px 0;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.item img {
+  height: calc(100% - 50px);
+  max-width: 150px;
+  object-fit: contain;
+}
+
+.item__bottom {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  text-align: left;
+  font-weight: 600;
+  opacity: 0.5;
+  letter-spacing: -0.25px;
+}
+
+.add {
+  font-size: 50px;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 10px;
+  line-height: 20px;
+  position: relative;
+  top: -5px;
 }
