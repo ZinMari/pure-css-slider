@@ -262,5 +262,21 @@ body {
 }
 
 .collection {
+  position: absolute;
+  top: 5vh;
+  left: 3.5vw;
+  max-width: 360px;
+  z-index: 10;
+}
 
+.collection h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+
+.collection p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 14px;
 }
