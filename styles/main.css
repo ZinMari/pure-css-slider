@@ -9,7 +9,7 @@
   --bg-odd: #f6f8fc;
   --aside: 300px;
   --model-width: 300px;
-  --model-height: 640px;
+  --model-height: 87.5vh;
 }
 
 @font-face {
@@ -279,4 +279,28 @@ body {
   font-size: 14px;
   line-height: 1.7;
   margin-top: 14px;
+}
+
+/* xs - 575.98px
+sm - 767.98px
+md - 991.98px
+lg - 1199.98px
+xl - 1399.98px */
+
+@media (max-width: 991.98px) {
+  :root {
+    --aside: 240px
+  }
+  .collection {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .show {
+    display: none;
+  }
+  :root {
+    --aside: 100%;
+  }
 }
