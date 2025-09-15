@@ -64,11 +64,109 @@ body {
   animation-timeline: scroll();
   animation-timing-function: linear;
   animation-fill-mode: both;
-  animation-range: 300vh;
+  animation-range: 0 300vh;
 }
 
 .layers img {
   height: 100%;
+}
+
+.layer6 {
+  animation-name: animation-6;
+  margin-left: -10vw;
+  opacity: 1;
+}
+
+@keyframes animation-6 {
+  to {
+    transform: scale(5);
+    margin-left: 320vw;
+  }
+}
+
+.layer5 {
+  animation-name: animation-5;
+  margin-left: -30vw;
+  transform: scale(.8);
+  opacity: .85;
+}
+
+@keyframes animation-5 {
+  to {
+    transform: scale(3.75);
+    margin-left: 200vw;
+  }
+  10%, 100%{
+    opacity: 1;
+  }
+}
+
+.layer4 {
+  animation-name: animation-4;
+  margin-left: -42.5vw;
+  transform: scale(.575);
+  opacity: .7;
+}
+
+@keyframes animation-4 {
+  to {
+    transform: scale(2.75);
+    margin-left: 120vw;
+  }
+  20%, 100%{
+    opacity: 1;
+  }
+}
+
+.layer3 {
+  animation-name: animation-3;
+  margin-left: -52vw;
+  transform: scale(.375);
+  opacity: .55;
+}
+
+@keyframes animation-3 {
+  to {
+    transform: scale(1.85);
+    margin-left: 65vw;
+  }
+  35%, 100%{
+    opacity: 1;
+  }
+}
+
+.layer2 {
+  animation-name: animation-2;
+  margin-left: -58vw;
+  transform: scale(.25);
+  opacity: .3;
+}
+
+@keyframes animation-2 {
+  to {
+    transform: scale(1.35);
+    margin-left: 25vw;
+  }
+  55%, 100%{
+    opacity: 1;
+  }
+}
+
+.layer1 {
+  animation-name: animation-1;
+  opacity: .1;
+  margin-left: -62vw;
+  transform: scale(.15);
+}
+
+@keyframes animation-2 {
+  to {
+    transform: scale(1);
+    margin-left: -2.5vw;
+  }
+  65%, 100%{
+    opacity: 1;
+  }
 }
 
 .aside {
